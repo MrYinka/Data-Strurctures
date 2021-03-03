@@ -27,7 +27,7 @@ const twoSums = (array, targetSum) => {
         const potentialMatch = targetSum - element;
 
         if(potentialMatch in nums){
-            // return [potentialMatch, element];
+            return [potentialMatch, element];
         }else{
             nums[element] = true;
         }
