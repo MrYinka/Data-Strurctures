@@ -1,5 +1,3 @@
-const array = [1,2,3,4,4,5];
+//Test Cases
 
-for(let element of array){
-    console.log(element);
-}
+
