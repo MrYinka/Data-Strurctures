@@ -19,18 +19,15 @@ const twoSums = (array, targetSum) => {
 
 
 // O(n)ST Complexity
-
 const twoSums = (array, targetSum) => {
     const nums = {};
-
     for(let element of array){
         const potentialMatch = targetSum - element;
-
-        if(potentialMatch in nums){
-            return [potentialMatch, element];
-        }else{
-            nums[element] = true;
-        }
+            if(potentialMatch in nums){
+                return [potentialMatch, element];
+            }else{
+                nums[element] = true;
+            }
     }
 
     return [];
