@@ -19,20 +19,30 @@ const twoSums = (array, targetSum) => {
 
 
 // O(n)ST Complexity
-const twoSums = (array, targetSum) => {
-    const nums = {};
-    for(let element of array){
-        const potentialMatch = targetSum - element;
-            if(potentialMatch in nums){
-                return [potentialMatch, element];
-            }else{
-                nums[element] = true;
-            }
-    }
+const twoSum = (nums, target) => {
 
+    let store = {};
+
+    for(let i = 0; i< nums.length; i++){
+        if(store[nums[i]] !== undefined){
+            return [store[nums[i]], i];
+        }
+        store[target-nums[i]] = i;
+    }
     return [];
-    
-}
+};
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
