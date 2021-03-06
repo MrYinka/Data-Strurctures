@@ -5,8 +5,9 @@ const tournamentWinner = (competitions, results) => {
     let scoreBoard = {"currentBestTeam": 0};
 
     for(let i = 0; i < competitions.length; i++){
-        let [homeTeam, awayTeam] = competitions[i];
+
         let result = results[i];
+        let [homeTeam, awayTeam] = competitions[i];
         let winningTeam = result === HOME_WON ? homeTeam : awayTeam;
 
         updateScoreBoard(winningTeam, 3, scoreBoard);

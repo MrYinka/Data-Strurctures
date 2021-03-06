@@ -24,7 +24,6 @@ const twoSums = (array, target) => {
 
     for(let element of array){
         if(storageObject[element] !== undefined){
-            console.log(storageObject);
             return [storageObject[element], element];
         } else{
             storageObject[target - element] = element;
