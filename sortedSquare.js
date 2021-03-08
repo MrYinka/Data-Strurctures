@@ -1,3 +1,5 @@
+// This algorithm returns the sorted square of an input array to a function in ascending order.
+// o(n)space, time complexity
 const sortedSquaredArray = (array) => {
 
     const sortedSquare = new Array(array.length).fill(0);
@@ -19,5 +21,8 @@ const sortedSquaredArray = (array) => {
     }
 
     return sortedSquare;
+
 }
+
+
 console.log(sortedSquaredArray([-4, 2, 3, 5, 6, 8, 9]));
